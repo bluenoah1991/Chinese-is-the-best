@@ -1,11 +1,11 @@
-#TileStache
+# TileStache
 
 _一种很酷炫的缓存地图瓦片的方式_
 
 
 **TileStache**是一个基于Python的服务器应用程序，能够基于渲染地理信息数据提供地图瓦片服务。你可能熟悉来自MetaCarta的Web地图服务器TileCache。TileStache与其很类似，但是我们希望它更简单并且对于设计人员和制图人员更好用。
 
-##概要
+## 概要
 
     import TileStache
     import ModestMaps
@@ -29,14 +29,14 @@ _一种很酷炫的缓存地图瓦片的方式_
 
 
 
-##相关依赖
+## 相关依赖
 
-###必须要有:
+### 必须要有:
 
 - ModestMaps: http://modestmaps.com, http://github.com/migurski/modestmaps-py
 - Python图片处理库 (Pillow): https://python-pillow.org
 
-###可选的:
+### 可选的:
 
 - Simplejson: https://github.com/simplejson/simplejson (可选的 if using >= python 2.6)
 - mapnik: http://mapnik.org (可选的)
@@ -56,7 +56,7 @@ _一种很酷炫的缓存地图瓦片的方式_
     http://mapnik.org/pages/downloads.html
 
 
-##安装
+## 安装
 
 TileStache可以直接从下载目录运行，比如像下面这些脚本:
 
@@ -73,7 +73,7 @@ TileStache可以直接从下载目录运行，比如像下面这些脚本:
   * 注意: 你可能需要在命令前面加上sudo以获取完整权限进行安装。
 
 
-##快速开始
+## 快速开始
 
 让TileStache开始工作在一个开发服务器上:
 
@@ -87,14 +87,14 @@ TileStache可以直接从下载目录运行，比如像下面这些脚本:
 这是一个预览，通过默认配置文件tilestache.cfg中的配置使用来自http://tile.osm.org的ModestMaps和OpenStreetMap瓦片
 
 
-##文档
+## 文档
 
 下一步是学习怎样构建自定义层以及如何使用它们提供服务。
 
 详细阅读[这个文档](http://tilestache.org/doc/)。
 
 
-##特性
+## 特性
 
 渲染Providers:
 * Mapnik
@@ -109,7 +109,7 @@ TileStache可以直接从下载目录运行，比如像下面这些脚本:
 * S3（这是Amazon S3）
 
 
-##设计目标
+## 设计目标
 
 TileStache的设计焦点在于易于使用，从而牺牲了自由度和完整性。我们希望任何一个人都可以简单的使用它为他们的城市构建一张地图，发布一个新的世界视窗，或者甚至构建下一个8-Bit NYC（http://8bitnyc.com）。
 
@@ -126,6 +126,6 @@ TileStache的核心试图做的尽量精简。基于像CGI脚本这样的入口�
 一个TileStache实例的默认配置动作应该允许大多数主流交互形式：一个世界范围的球形莫卡托左上角瓦片布局兼容OpenStreetMap，Google，Bing Maps，Yahoo!和其他等等。让TileStache支持所有的扩展系统应该是可能的，但是我们降低复杂度，遵循标准，这样对于基本的web客户更务实和便捷。
 
 
-##许可证
+## 许可证
 
 BSD, 请看LICENSE文件.
